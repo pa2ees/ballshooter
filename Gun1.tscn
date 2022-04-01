@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/Gun1.png" type="Texture" id=1]
+[ext_resource path="res://Gun1.gd" type="Script" id=2]
+
+[node name="Gun1" type="Sprite"]
+script = ExtResource( 2 )
+
+[node name="gun_sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
