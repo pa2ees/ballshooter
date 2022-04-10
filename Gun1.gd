@@ -1,6 +1,6 @@
 extends Sprite
 
-var bulletObj = null
+onready var bulletObj = load("res://Bullet.tscn")
 var bullet_start_offset = Vector2(35, 0)
 const bullet_velocity_magnitude = 5
 
@@ -11,7 +11,8 @@ func _physics_process(delta):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	bulletObj = load("res://Bullet.tscn")
+	#bulletObj = load("res://Bullet.tscn")
+	pass
 
 func _input(event):
 	if event.is_action_pressed("LMB"):

@@ -1,34 +1,24 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://myFirstFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://PlayButton.gd" type="Script" id=2]
 
 [node name="MainMenu" type="Control"]
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
 margin_left = 30.0
 margin_top = 32.0
 margin_right = 990.0
 margin_bottom = 578.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+alignment = 2
 
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
-margin_right = 960.0
-margin_bottom = 470.0
-size_flags_vertical = 3
-
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
 margin_top = 474.0
 margin_right = 960.0
 margin_bottom = 546.0
 custom_fonts/font = ExtResource( 1 )
 text = "PLAY"
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
